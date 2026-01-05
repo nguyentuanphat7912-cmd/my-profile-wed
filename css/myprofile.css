@@ -1,0 +1,7 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+img {
+  border-radius: 10px; /* Bo tròn góc 10px */
+  border: 2px solid #00ff00; /* Viền màu xanh lá cây dày 2px */
+}
