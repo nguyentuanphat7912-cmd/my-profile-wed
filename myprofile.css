@@ -1,8 +1,11 @@
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #f8feff;
+  background-color: #f6fcfd;
 }
 img {
   border-radius: 10px; /* Bo tròn góc 10px */
   border: 2px solid #00ff00; /* Viền màu xanh lá cây dày 2px */
+}
+h1 {
+  color: cadetblue;
 }
