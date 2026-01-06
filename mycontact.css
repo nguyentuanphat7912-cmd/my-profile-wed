@@ -1,3 +1,38 @@
 body {
-  background-color: rgb(219, 255, 255);
+  /* 1. Tạo một dải màu gồm nhiều màu sắc (Đỏ, Vàng, Xanh...) */
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+
+  /* 2. Phóng to ảnh nền lên 4 lần để có chỗ mà di chuyển */
+  background-size: 400%;
+
+  /* 3. Gọi animation tên là 'rgb_effect' chạy trong 20 giây, lặp vô hạn */
+  animation: rgb_effect 25s linear infinite;
+
+  /* Các dòng cũ của bạn giữ nguyên */
+  font-family: "Courier New", Courier, monospace;
+  color: white; /* Đổi chữ thành màu trắng cho dễ đọc trên nền RGB */
+  text-shadow: 2px 2px 4px #000000; /* Thêm bóng đen cho chữ để nổi bật hơn */
+}
+/* 4. Viết kịch bản cho animation hoạt động */
+@keyframes rgb_effect {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 400% 0%;
+  }
+}
+h2 {
+  color: rgb(51, 255, 255);
 }
