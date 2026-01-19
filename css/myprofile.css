@@ -26,3 +26,17 @@ p {
 #tieude {
   text-align: center;
 }
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#overclock {
+  text-align: justify;
+  font-size: small;
+}
+#imgover {
+}
+div {
+  text-align: center; /* Căn giữa nội dung bên trong thẻ div */
+  font-family:
+    Arial, Helvetica, sans-serif; /* Chọn font chữ cho nội dung bên trong thẻ div */
+}
