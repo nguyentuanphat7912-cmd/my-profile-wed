@@ -10,8 +10,27 @@
 
 <body>
     <img id="avatar" src="img/—Pngtree—avatar icon profile icon member_5247852.png" alt="avatar">
-    <a href="html/profile.html" target="_self">
-        <h2 id="nút profile">〖MY PROFILE〗</h2>
+    <h1>🔒 KHOÁ BẢO MẬT</h1>
+
+    <input type="password" id="passInput" placeholder="Nhập mật khẩu...">
+    <div>
+     
+        <button onclick="checkPass()"><b>MỞ KHOÁ</b></button>
+    </div>
+    <script>
+        function checkPass() {
+            // Lấy giá trị từ ô nhập
+            var password = document.getElementById('passInput').value;
+
+            // Logic so sánh (giống hệt C++)
+            if (password == "phat792012") {
+                window.location.href = "html/profile.html"; // Chuyển trang nếu đúng
+            } else {
+                alert("sai bét"); // Thông báo nếu sai
+            }
+        }
+    </script>
+
 
 </body>
 
