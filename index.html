@@ -14,7 +14,6 @@
 
     <input type="password" id="passInput" placeholder="Nhập mật khẩu...">
     <div>
-     
         <button onclick="checkPass()"><b>MỞ KHOÁ</b></button>
     </div>
     <script>
@@ -24,11 +23,14 @@
 
             // Logic so sánh (giống hệt C++)
             if (password == "phat792012") {
+                mk = "true";
                 window.location.href = "html/profile.html"; // Chuyển trang nếu đúng
             } else {
+                mk = "false";
                 alert("sai bét"); // Thông báo nếu sai
             }
         }
+
     </script>
 
 
