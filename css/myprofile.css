@@ -3,7 +3,13 @@ img {
 }
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #f6fcfd;
+
+  background-image: url(../img/1769184103227.png);
+  /* Các dòng code cũ của bạn giữ nguyên, thêm hoặc sửa các dòng dưới đây */
+  background-repeat: no-repeat; /* Ngăn không cho ảnh lặp lại */
+  background-size: cover; /* Kéo dãn ảnh để phủ kín toàn bộ màn hình */
+  background-position: center; /* Căn giữa ảnh để trọng tâm nằm ở giữa */
+  background-attachment: fixed; /* (Tùy chọn) Giữ ảnh cố định khi bạn cuộn chuột xuống */
 }
 img {
   border-radius: 10px; /* Bo tròn góc 10px */
@@ -34,6 +40,9 @@ p {
   font-size: small;
 }
 #imgover {
+  display: block; /* Biến ảnh thành khối để chiếm dòng riêng */
+  margin: left;
+  width: 400px; /* (Tùy chọn) Nên đặt chiều rộng để ảnh không to quá khổ */
 }
 div {
   text-align: center; /* Căn giữa nội dung bên trong thẻ div */
